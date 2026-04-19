@@ -1,0 +1,32 @@
+# Tickers para monitorar — UM POR LINHA
+# Use # no início para comentar (ignorar)
+# Use os tickers exatamente como aparecem no Yahoo Finance
+#
+# Substitua os exemplos abaixo pelos ativos que tiveram melhor SQN
+# no seu dashboard de datamining.
+
+CDNS
+AOS
+LH
+TER
+TJX
+MA
+SYK
+MCD
+AZO
+AVGO
+LRCX
+FIX
+PWR
+COST
+MSFT
+TT
+CPRT
+BALL
+RSG
+AME
+
+# Dicas:
+# - Para ações .br, adicione .SA no final (ex: PETR4.SA, VALE3.SA)
+# - Para ETFs use o ticker normal (SPY, QQQ, IWM)
+# - Para futuros, use sufixo =F (ex: ES=F, NQ=F)

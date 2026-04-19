@@ -1,0 +1,33 @@
+name: Scanner Setup 1-2-3 diário
+
+on:
+  # Roda automaticamente de seg a sex às 21:30 UTC
+  # = 18:30 BRT (após fechamento do mercado americano às 17:00 NY = 18:00 BRT no horário de verão / 19:00 BRT fora dele)
+  # Ajuste o cron conforme seu fuso e horário do mercado
+  schedule:
+    - cron: '30 21 * * 1-5'
+
+  # Permite rodar manualmente pelo botão "Run workflow" no GitHub
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python alerta_123.py
