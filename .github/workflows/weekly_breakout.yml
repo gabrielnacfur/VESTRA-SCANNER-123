@@ -1,0 +1,49 @@
+name: Scanner Rompimento Semanal (15 min)
+
+on:
+  # Roda a cada 15 minutos durante o pregão americano (seg-sex 9:30-16:00 NY = ~13:30-20:00 UTC)
+  # GitHub Actions tem latência variável; o cron mais frequente é 5 min mas usamos 15 pra economizar.
+  schedule:
+    - cron: '*/15 13-20 * * 1-5'
+
+  workflow_dispatch:
+
+# Permite que o workflow faça commits no estado anti-spam
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    # Evita execuções concorrentes (se uma demora, a próxima espera ou pula)
+    concurrency:
+      group: weekly-breakout
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python alerta_weekly_breakout.py
+
+      - name: Commit state file
+        run: |
+          if [ -f alert_state.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add alert_state.json
+            git diff --staged --quiet || git commit -m "chore: update alert state [skip ci]"
+            git push || true
+          fi
