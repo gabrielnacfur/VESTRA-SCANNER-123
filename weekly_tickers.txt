@@ -3,18 +3,26 @@
 # Edite com base nos melhores ativos do dashboard de Rompimento Semanal.
 # Esta lista é INDEPENDENTE da do alerta 1-2-3.
 
-AAPL
-MSFT
-NVDA
-GOOGL
-META
-AMZN
-TSLA
-NFLX
+AIZ
 AMD
-JPM
-V
-WMT
+AME
+AVGO
+COF
+EIX
+ETN
+FICO
+FISV
+FIX
+HON
+MA
+PLD
+PWR
+SHOP
+SYF
+SYK
+TER
+TMO
+TT
 
 # Dicas:
 # - Use exatamente o ticker do Yahoo Finance
