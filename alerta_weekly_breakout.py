@@ -6,7 +6,7 @@ Monitora preços DURANTE o pregão (a cada 15 min) e envia alerta quando:
   LONG  → preço atual rompe a máxima das últimas N semanas E SMA20 está subindo
   SHORT → preço atual rompe a mínima das últimas N semanas E SMA20 está descendo
 
-A janela de semanas (N) é configurável no topo do arquivo: N_WEEKS = 2 (padrão)
+A janela de semanas (N) é configurável no topo do arquivo: N_WEEKS = 1 (padrão)
 
 Lista de ativos: weekly_tickers.txt (separada da estratégia 1-2-3)
 
