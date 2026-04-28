@@ -1,0 +1,22 @@
+# Tickers para monitorar — Estratégia Rompimento Semanal
+# UM POR LINHA, # para comentar
+# Edite com base nos melhores ativos do dashboard de Rompimento Semanal.
+# Esta lista é INDEPENDENTE da do alerta 1-2-3.
+
+AAPL
+MSFT
+NVDA
+GOOGL
+META
+AMZN
+TSLA
+NFLX
+AMD
+JPM
+V
+WMT
+
+# Dicas:
+# - Use exatamente o ticker do Yahoo Finance
+# - .br: adicionar .SA (PETR4.SA, VALE3.SA)
+# - ETFs: ticker normal (SPY, QQQ, IWM)
