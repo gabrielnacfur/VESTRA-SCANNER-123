@@ -1,0 +1,9 @@
+{
+  "week_id": "2026-18",
+  "alerts": {
+    "AIZ_LONG": true,
+    "EIX_SHORT": true,
+    "MA_LONG": true,
+    "SYK_SHORT": true
+  }
+}
