@@ -4,6 +4,11 @@
     "AIZ_LONG": true,
     "EIX_SHORT": true,
     "MA_LONG": true,
-    "SYK_SHORT": true
+    "SYK_SHORT": true,
+    "AMD_LONG": true,
+    "AME_LONG": true,
+    "FIX_LONG": true,
+    "PWR_LONG": true,
+    "TT_LONG": true
   }
 }
