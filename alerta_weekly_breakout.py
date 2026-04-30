@@ -35,7 +35,7 @@ TICKERS_FILE = SCRIPT_DIR / "weekly_tickers.txt"
 STATE_FILE = SCRIPT_DIR / "alert_state.json"
 
 # ============ CONFIGURAÇÃO ============
-N_WEEKS = 2  # ⚠️ ALTERE AQUI: 1, 2, 3 ou 4 semanas anteriores
+N_WEEKS = 1  # ⚠️ ALTERE AQUI: 1, 2, 3 ou 4 semanas anteriores
 # ======================================
 
 
