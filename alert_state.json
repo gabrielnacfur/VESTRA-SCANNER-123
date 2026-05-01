@@ -9,6 +9,7 @@
     "AME_LONG": true,
     "FIX_LONG": true,
     "PWR_LONG": true,
-    "TT_LONG": true
+    "TT_LONG": true,
+    "ETN_LONG": true
   }
 }
