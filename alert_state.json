@@ -1,15 +1,11 @@
 {
-  "week_id": "2026-18",
+  "week_id": "2026-19",
   "alerts": {
-    "AIZ_LONG": true,
-    "EIX_SHORT": true,
-    "MA_LONG": true,
-    "SYK_SHORT": true,
-    "AMD_LONG": true,
-    "AME_LONG": true,
+    "AVGO_LONG": true,
+    "FISV_LONG": true,
     "FIX_LONG": true,
     "PWR_LONG": true,
-    "TT_LONG": true,
-    "ETN_LONG": true
+    "SHOP_LONG": true,
+    "SYK_SHORT": true
   }
 }
