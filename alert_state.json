@@ -6,6 +6,8 @@
     "FIX_LONG": true,
     "PWR_LONG": true,
     "SHOP_LONG": true,
-    "SYK_SHORT": true
+    "SYK_SHORT": true,
+    "SHOP_SHORT": true,
+    "TMO_SHORT": true
   }
 }
