@@ -8,6 +8,12 @@
     "SHOP_LONG": true,
     "SYK_SHORT": true,
     "SHOP_SHORT": true,
-    "TMO_SHORT": true
+    "TMO_SHORT": true,
+    "AIZ_LONG": true,
+    "AMD_LONG": true,
+    "AME_LONG": true,
+    "FISV_SHORT": true,
+    "MA_SHORT": true,
+    "PLD_LONG": true
   }
 }
