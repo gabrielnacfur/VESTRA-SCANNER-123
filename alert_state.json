@@ -15,6 +15,7 @@
     "FISV_SHORT": true,
     "MA_SHORT": true,
     "PLD_LONG": true,
-    "FICO_LONG": true
+    "FICO_LONG": true,
+    "ETN_SHORT": true
   }
 }
