@@ -15,16 +15,7 @@ SYK
 MCD
 AZO
 AVGO
-LRCX
-FIX
-PWR
-COST
-MSFT
-TT
-CPRT
-BALL
-RSG
-AME
+
 
 # Dicas:
 # - Para ações .br, adicione .SA no final (ex: PETR4.SA, VALE3.SA)
